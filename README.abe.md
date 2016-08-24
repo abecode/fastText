@@ -27,6 +27,8 @@ with open("model.vec") as f:
 	  vectors[word] = vec
 
 W =  np.empty((len(vectors),100)) # 100 is number of neuron units
+for i,w in enumerate(vectors):
+  W[i,:] = vectors[w]
 words = [w for w in vectors]
 W[words.index("drop"),:] # find word vector for drip
 WW = W*W
