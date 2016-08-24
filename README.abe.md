@@ -1,4 +1,4 @@
-preproces data
+preprocess data
 
 ```
 cat <(zcat /data/headlines.gz| cut -f 3) <(zcat /data/headlines_sn.gz| cut -f 4) | perl wikifil.mod.pl > data.txt
